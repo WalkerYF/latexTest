@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.5)  6 SEP 2017 04:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.5)  6 SEP 2017 05:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1967,11 +1967,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 31932 strings out of 493005
- 587356 string characters out of 6137957
- 669715 words of memory out of 5000000
- 35497 multiletter control sequences out of 15000+600000
- 19306 words of font info for 119 fonts, out of 8000000 for 9000
+ 31960 strings out of 493005
+ 587906 string characters out of 6137957
+ 669758 words of memory out of 5000000
+ 35516 multiletter control sequences out of 15000+600000
+ 23369 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  64i,10n,82p,10441b,2695s stack positions out of 5000i,500n,10000p,200000b,80000s
 
