@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.5)  12 SEP 2017 19:03
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.5)  12 SEP 2017 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./example.tex
-(./example.tex
+**./test.tex
+(./test.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./cumcmthesis.cls
@@ -1628,8 +1628,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 203.
 Package: xeCJK-listings 2017/05/15 v3.4.8 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count281
 \l__xeCJK_listings_flag_int=\count282
-)
-(./example.aux
+) (./test.aux
 
 LaTeX Warning: Label `tab001' multiply defined.
 
@@ -1640,7 +1639,7 @@ LaTeX Warning: Label `my_table1' multiply defined.
 LaTeX Warning: Label `my_table1' multiply defined.
 
 )
-\openout1 = `example.aux'.
+\openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -1788,9 +1787,9 @@ LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
 
-(./example.out) (./example.out)
+(./test.out) (./test.out)
 \@outlinefile=\write4
-\openout4 = `example.out'.
+\openout4 = `test.out'.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
@@ -1836,23 +1835,23 @@ LaTeX Font Info:    Calculating math sizes for size <12.05> on input line 24.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00876pt
-(hyperref)                removed on input line 39.
+(hyperref)                removed on input line 47.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00876pt
-(hyperref)                removed on input line 39.
+(hyperref)                removed on input line 47.
 
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00876pt
-(hyperref)                removed on input line 100.
+(hyperref)                removed on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.00876pt
-(hyperref)                removed on input line 100.
+(hyperref)                removed on input line 104.
 
 File: figures/1.png Graphic file (type QTm)
 <use  "figures/1.png" >
@@ -1885,7 +1884,7 @@ File: figures/1.png Graphic file (type QTm)
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(1)/bx/n' undefined
-(Font)              using `TU/SimSun(1)/m/n' instead on input line 117.
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 121.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1958,27 +1957,28 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (d:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
- (./example.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
+ (./test.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 279.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 31960 strings out of 493005
- 587906 string characters out of 6137957
- 669761 words of memory out of 5000000
- 35516 multiletter control sequences out of 15000+600000
- 23369 words of font info for 137 fonts, out of 8000000 for 9000
+ 31953 strings out of 493005
+ 587586 string characters out of 6137957
+ 669755 words of memory out of 5000000
+ 35512 multiletter control sequences out of 15000+600000
+ 23345 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 64i,10n,82p,10441b,2695s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,10n,82p,10438b,2695s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on example.pdf (7 pages).
+Output written on test.pdf (7 pages).
