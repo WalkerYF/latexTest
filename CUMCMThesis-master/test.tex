@@ -3,6 +3,28 @@
 
 % \documentclass{cumcmthesis}
 \documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{diagbox}
+\usepackage{minted}
+\usepackage{hyperref}
+
+\def\equationautorefname{式}%
+\def\footnoteautorefname{脚注}%qu
+\def\itemautorefname{项}%
+\def\figureautorefname{图figure}%
+\def\tableautorefname{表}%
+\def\partautorefname{篇}%
+\def\appendixautorefname{附录}%
+\def\chapterautorefname{章}%
+\def\sectionautorefname{节}%
+\def\subsectionautorefname{小小节}%
+\def\subsubsectionautorefname{subsubsection}%
+\def\paragraphautorefname{段落}%
+\def\subparagraphautorefname{子段落}%
+\def\FancyVerbLineautorefname{行}%
+\def\theoremautorefname{定理}%
+
 
 
 \title{关于XXXXX的研究与分析 \LaTeX{} 模板}
@@ -30,7 +52,7 @@ cumcmthesis 是为全国大学生数学建模竞赛编写的\LaTeX{}模板, 旨�
 \keywords{折叠桌\quad  曲线拟合\quad   非线性优化模型\quad  受力分析}
 \end{abstract}
 
-\begin{tabular}{l|c|p{5cm}}
+\begin{tabular}{l|c|p{5cm}} 
 name & \multicolumn{2}{c}{Value} \\
 \hline
 name1 & a & 12 \\
@@ -39,6 +61,18 @@ name3 & c & 14 \\
 \end{tabular}
 
 \section{问题重述}
+
+\begin{displaymath}
+x^{2} \geq 0\qquad
+\textrm{for all }x\in\mathbb{R}
+\arccos \cos \csc \exp \ker \limsup \min
+\arcsin \cosh \deg \gcd \lg \ln \Pr
+\arctan \cot \det \hom \lim \log \sec
+\arg \coth \dim \inf \liminf \max \sin
+\sinh \sup \tan \tanh
+
+\end{displaymath}
+
 创意平板折叠桌注重于表达木制品的优雅和设计师所想要强调的自动化与功能性。为了增大有效使用面积。设计师以长方形木板的宽为直径截取了一个圆形作为桌面，又将木板剩余的面积切割成了若干个长短不一的木条，每根木条的长度为平板宽到圆上一点的距离，分别用两根钢筋贯穿两侧的木条，使用者只需提起木板的两侧，便可以在重力的作用下达到自动升起的效果，相互对称的木条宛如下垂的桌布，精密的制作工艺配以质朴的木材，让这件工艺品看起来就像是工业革命时期的机器。
 
 
@@ -52,7 +86,9 @@ name3 & c & 14 \\
 
 （2）......
 
+
 \section{问题分析}
+
 
 
 \section{模型假设}
@@ -81,15 +117,17 @@ Kirchhoff's voltage law can be derived \ldots
 % Example 3
 \ldots which has several advantages.
 \begin{equation}
+\label{eq:01}
 I_D = I_F - I_R
 \end{equation}
 is the core of a very different transistor model. \ldots
 
 
 \section{符号说明}
+\begin{table}[!hbp]
 \begin{center}
 \begin{tabular}{cc}
- \hline
+ \hline  
  \makebox[0.3\textwidth][c]{符号}	&  \makebox[0.4\textwidth][c]{意义} \\ \hline
  D	    & 木条宽度（cm） \\ \hline
  L	    & 木板长度（cm）  \\ \hline
@@ -98,35 +136,63 @@ is the core of a very different transistor model. \ldots
  T	    & 木条根数  \\ \hline
 \end{tabular}
 \end{center}
+\end{table}
+
+
+\newcolumntype{F}{>{$}c<{$}}
+\begin{tabular}{FFF}
+\rowcolor[gray]{.9}
+\alpha & \beta    & \gamma   \\
+\delta & \epsilon & \upsilon \\
+\sigma & \tau     & \phi     \\
+\end{tabular}
+
+\begin{tabular}{|ccc|}
+\hline
+2&9&4\\
+7&\multicolumn{2}{c|}{\multirow{2}*{{?}}}\\
+6&&\\
+\hline
+\end{tabular}
 
 \section{问题分析}
 
 \subsection{问题一分析}
-题目要求建立模型描述折叠桌的动态变化图，由于在折叠时用力大小的不同，我们不能描述在某一时刻折叠桌的具体形态，但我们可以用每根木条的角度变化来描述折叠桌的动态变化。首先，我们知道折叠桌前后左右对称，我们可以运用几何知识求出四分之一木条的角度变化。最后，根据初始时刻和最终形态两种状态求出桌腿木条开槽的长度。\footnote{这是脚注}
+题目要求建立模型描述折叠桌的动态变化图\cite{bib:two}，由于在折叠时用力大小的不同，我们不能描述在某一时刻折叠桌的具体形态，但我们可以用每根木条的角度变化来描述折叠桌的动态变化。首先，我们知道折叠桌前后左右对称，我们可以运用几何知识求出四分之一木条的角度变化。最后，根据初始时刻和最终形态两种状态求出桌腿木条开槽的长度。\footnote{这是脚注}
 
 第\ref{my_label1}节
 第\pageref{my_label1}
 
+
+\begin{figure}[!thbp]
+\makebox[\textwidth]{\framebox[5cm]{\rule{0pt}{5cm}}}
+\caption{Five by Five in Centimetres.} \label{white}
+\label{fig:xxx}
+\end{figure}
+
 \begin{itemize}
-	\item C++
+	\item C++\cite{pa}
 	\item Java
 	\item HTML
 \end{itemize}
 
+\clearpage
 
 问题流程图：
-\begin{figure}[!h]
+\begin{figure}[!thbp] 
 \centering
 \includegraphics[width=.6\textwidth]{1.png}
 \caption{问题三流程图}
 \end{figure}
 
+\clearpage
+
 \section{模型的建立与求解}
 
-表格应具有三线表格式，因此常用 booktabs宏包，其标准格式如表~\ref{tab001}~所示。
+表格应具有三线表格式\autoref{fig:xxx}，因此常用 booktabs宏包\autoref{tab001}，其标准\autoref{eq:01}格式如表\ref{tab001}~所示。
 \begin{table}[!htbp]
 \caption{标准三线表格}\label{tab001} \centering
-\begin{tabular}{ccccc}
+\begin{tabular}{ccccc} 
 \toprule[1.5pt]
 \label{my_table1}
 $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
@@ -137,6 +203,30 @@ $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
 \bottomrule[1.5pt]
 \end{tabular}
 \end{table}
+
+\begin{lstlisting}{language=Pascal}
+for i:=maxint to 0 do
+ begin
+{ do nothing }
+ end;
+\end{lstlisting}
+
+\begin{minted}[style=monokai]{c}
+int main() {
+printf("hello, world");
+return 0;
+}
+\end{minted}
+
+\begin{lstlisting}[language={[ANSI]C},numbers=left,numberstyle=\tiny,keywordstyle=\color{blue!70},commentstyle=\color{red!50!green!50!blue!50},frame=shadowbox, rulesepcolor=\color{red!20!green!20!blue!20}] 
+int main(int argc, char ** argv) 
+{ 
+
+printf("Hello world! \n"); 
+
+return 0; 
+} 
+\end{lstlisting}
 
 \section{模型检验}
 表格应具有三线表格式，因此常用 booktabs宏包，其标准格式如表~\ref{tab001}~所示。
@@ -155,10 +245,12 @@ $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
 \end{table}
 
 其绘制表格的代码及其说明如下。
+\begin{figure}
 \begin{tcode}
 \begin{table}[!htbp]
 \caption[标签名]{中文标题}
 \begin{tabular}{cc...c}
+
 
 \toprule[1.5pt]
 表头第1个格   & 表头第2个格   & ... & 表头第n个格  \\
@@ -171,6 +263,7 @@ $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
 \end{tabular}
 \end{table}
 \end{tcode}
+\end{figure}
 
 \bigskip
 table环境是一个将表格嵌入文本的浮动环境。
@@ -222,7 +315,7 @@ $D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in)\\
 
 %参考文献
 \begin{thebibliography}{9}%宽度9
- \bibitem{bib:one} 姜启源，数学模型（第三版），高等教育出版社，2003
+ \bibitem{pa} 姜启源，数学模型（第三版），高等教育出版社，2003
  \bibitem{bib:two} 王建伟，MATLAB7.X程序设计，中国水利水电出版社，2007
 \end{thebibliography}
 
